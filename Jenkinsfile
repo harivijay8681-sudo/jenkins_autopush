@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/harivijay8681-sudo/jenkins_autopush.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo "Building in ${params.ENV} environment..."
